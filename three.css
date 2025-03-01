@@ -1,0 +1,222 @@
+.border-radius{
+    border-radius: 16px;
+}
+input:focus{
+    border: none;
+}
+.no-focus:focus {
+    box-shadow: none !important;
+    outline: none !important;
+}
+.img-size{
+    width: 120px;
+    height: 120px;
+}
+.w-10 {
+    width: 10%;
+}
+.custom-margin-top{
+    margin-top: 200px;   
+}
+
+/* start shop-categories */
+    .shop-categories-card:hover{
+        background-color: green;
+    }
+    .image-container:hover .image-card h4{
+        color: white;
+    }
+    .image-container:hover .image-card .hover-bg{
+        background-color: white;
+        color: black;
+    }
+/* end shop-categories */
+
+/* start Fresh-Products */
+    .product-card{
+        background-color: #f9f6f1;
+        border: 1px;
+        border-radius: 12px;
+        position: relative;
+    }
+
+    .products-discount{
+        position: absolute;
+        top: 12px;
+        left: 12px;
+        background-color: black;
+        color: white;
+        font-weight: bold;
+        padding: 8px 10px;
+        border-radius: 12px;
+    }
+    .product-content{
+        padding: 20px;
+    }
+    /* image-front to image-back */
+    .image-back {
+        display: none;
+    }
+    .product-card:hover .image-front{
+        display: none;
+    }
+    .product-card:hover .image-back{
+        display: block;
+    }
+    /* image-front to image-back */
+    .product-icon{
+        display: none;
+        position: absolute;
+        top: 65%;
+        transition: all 0.5s ease-in-out;
+    }
+    .image-back-icon{
+        display: flex;
+        transition: all 0.5s ease-in-out;
+    }
+    .product-card:hover .product-icon{
+        display: block;
+
+    }
+    .image-back-icon-style{
+        background-color: green;
+        color: white;
+        font-size: 24px;
+        padding: 12px;
+        border-radius: 8px;
+        margin-right: 7px;
+    
+    }
+/* end Fresh-Products */
+/* start farming-with-love */
+    .card-image{
+        transition: transform 0.5s ease-in-out;
+    }
+    .card-container:hover .card-image {
+        transform: scaleX(-1); /* Flip the image horizontally */
+    }
+/* end farming-with-love */
+/* start video */
+    .video-icon{
+        font-size: 25px;
+        background: white;
+        border-radius: 50%;
+        padding: 20px;
+        border: 1px solid black;
+        transition: all 0.5s ease;
+    }
+    .video-icon:hover{
+        border: none;
+    }
+/* end video */
+/* start shop-categories */
+    .image-container {
+        position: relative;
+        overflow: hidden;
+    }
+    .image-container::before{
+        content: " ";
+        position: absolute;
+        /* inset 0 mane( top/bottom/left/right all side theke 0 kaj kore) */
+        inset: 0;
+        top: auto;
+        background-color: green;
+        height: var(--card-height, 0);
+        transition: all 0.3s ease;
+    }
+    .image-container:hover {
+        --card-height: 100%;
+    }
+    .image-container > .image-card {
+        position: absolute;
+        inset: 0;
+        top: 20px;
+    }
+    .image-container img {
+        transition: transform 0.3s ease;
+    }
+    .image-container img:hover {
+    transform: scale(1.1);
+    overflow: hidden;
+    }
+
+
+
+
+    .img-hover-zoom {
+        overflow: hidden; /* [1.2] Hide the overflowing of child elements */
+      }
+      
+      /* [2] Transition property for smooth transformation of images */
+      .img-hover-zoom img {
+        transition: transform .5s ease;
+      }
+      
+      /* [3] Finally, transforming the image when container gets hovered */
+      .img-hover-zoom:hover img {
+        transform: scale(1.1);
+      }
+/* end shop-categories- */
+/* start Daily-Fresh-Best-For */
+    .background-img{
+        position: relative;
+    }
+    .text{
+        position: absolute;
+        top: 0;
+        left: 16px;
+        color: white;
+    }
+    .btn-white{
+        background-color: white;
+    }
+/* end Daily-Fresh-Best-For */
+/* start fresh-products */
+    .fresh-product-card{
+        border-radius: 16px;
+    }
+    .fresh-product-img{
+        position: relative;
+        width: 50%;
+    }
+    .fresh-product-discount{
+        position: absolute;
+        top: 8px;
+        left: 8px;
+        background-color: black;
+        color: white;
+        padding: 2px 6px;
+        border-radius: 8px;
+    }
+  
+/* end fresh-products */
+/* start Special-Offer */
+    .hover-color-change{
+        transition: all 0.7s ease-in-out;
+    }
+    .hover-color-change:hover {
+        background-color: black; 
+        color: white; 
+        border-color: black;
+    }
+/* end Special-Offer */
+
+
+.custom-align-right{
+    text-align: end;
+}
+
+
+
+/* end fresh-products */
+/* start shop-categories-2 */
+
+/* end shop-categories-2 */
+/* start footer */
+.custom-hover-li{
+    transition: all 0.5s ease-in-out;
+}
+.custom-hover-li:hover{
+    color: darkorange !important;
+}
+/* end footer */
